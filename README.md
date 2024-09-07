@@ -2,7 +2,7 @@
 
 **1. Set up the testing class and basic structure**
    - **Task:** Create the `OfficeServiceTest` class within the appropriate `test` package. 
-   - **Details:** Ensure that the class is annotated with `@ExtendWith(MockitoExtension.class)` to support Mockito in your tests. Set up class-level annotations like `@Test` to enable context loading. Initialize mock dependencies for `OfficeRepository` and `OfficeService` using Mockito (MockitoAnnotations.initMocks(this)).
+   - **Details:** Set up class-level annotations like `@Test` to enable context loading. Initialize mock dependencies for `OfficeRepository` and `OfficeService` using Mockito (MockitoAnnotations.initMocks(this)).
    - **Goal:** The class should be correctly configured to mock dependencies and inject them into the service for testing.
 
 **2. Write the setup method**
@@ -39,11 +39,6 @@
    - **Task:** Add tests that check the behavior when invalid data is provided or when operations fail (e.g., creating an office with a missing doctor).
    - **Details:** Use Mockito to simulate repository failures or invalid input conditions. Ensure that the service throws the appropriate exceptions and handles edge cases gracefully.
    - **Goal:** Ensure that the service properly manages errors and invalid conditions, providing meaningful exceptions where necessary.
-
-**9. Ensure comprehensive test coverage for all public methods**
-   - **Task:** Review all public methods in the `OfficeService` class and verify that each is covered by unit tests.
-   - **Details:** Go through the service methods and ensure that all possible scenarios (successful execution, failure cases, edge cases) are tested. Refactor or extend tests where necessary to achieve comprehensive coverage.
-   - **Goal:** Ensure the class is fully covered by unit tests, with clear assertions validating all functional paths.
 
 ---
 
